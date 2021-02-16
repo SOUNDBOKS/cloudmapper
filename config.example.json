@@ -1,0 +1,10 @@
+{
+    "accounts": [
+        {
+            "default": true,
+            "id": "jonasiv",
+            "name": "jonasiv"
+        }
+    ],
+    "cidrs": {}
+}

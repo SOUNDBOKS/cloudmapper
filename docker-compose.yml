@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+    cloudmapper:
+        build:
+            context: .
+        image: cloudmapper
+        container_name: cloudmapper
+        env_file: .env
+        volumes:
+            - ./account-data:/opt/cloudmapper/account-data
+            - ./config.json:/opt/cloudmapper/config.json
+            - ./web:/opt/cloudmapper/web
+        ports:
+            - ${EXTERNAL_PORT}:8000

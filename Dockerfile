@@ -14,4 +14,9 @@ RUN apt-get install -y bash
 COPY . /opt/cloudmapper
 RUN pip install -r requirements.txt
 
-RUN bash
+COPY .env ./.env
+COPY entrypoint.sh ./entrypoint.sh
+
+VOLUME /opt/cloudmapper/web /opt/cloudmapper/account-data
+
+CMD ["sh","entrypoint.sh"]
