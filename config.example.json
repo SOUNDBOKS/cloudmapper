@@ -2,8 +2,8 @@
     "accounts": [
         {
             "default": true,
-            "id": "jonasiv",
-            "name": "jonasiv"
+            "id": "youAWSAccount",
+            "name": "yourAWSAccount"
         }
     ],
     "cidrs": {}
